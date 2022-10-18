@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>清理人生空間</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .wrap {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .item {
+                width: 25%;
+                position: relative;
+            }
+            .item img {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .item:hover .txt{
+                opacity: 1;
+            }
+            .txt {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 20px;
+                background-color: rgba(0,0,0,0.6);
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                opacity: 0;
+                transition: opacity .5s;
+                text-align: center;
+            }
+            .txt h2 {
+                font-size: 40px;
+                color: #ff0;
+            }
+            .txt h2:after {
+                content: '';
+                display: block;
+                width: 0%;
+                height: 2px;
+                margin: 10px 0;
+                background-color: #ff0;
+                transition: width .5s .1s;
+            }
+            .txt:hover h2:after {
+                width: 100%;
+            }
+            .txt p {
+                font-size: 20px;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="item">
+                <img src="https://picsum.photos/500/400?random=10" alt="">
+                <div class="txt">
+                    <h2>清理人生空間 Tip1</h2>
+                    <p>不要浪費時間猶豫</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/400?random=20" alt="">
+                <div class="txt">
+                    <h2>清理人生空間 Tip2</h2>
+                    <p>別讓不在意你的人耽誤歲月</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/400?random=1" alt="">
+                <div class="txt">
+                    <h2>清理人生空間 Tip3</h2>
+                    <p>別讓不合適的工作消磨人生</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/400?random=30" alt="">
+                <div class="txt">
+                    <h2>清理人生空間 Tip4</h2>
+                    <p>別讓不重要的事情佔據思緒</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/500/400?random=5" alt="">
+                <div class="txt">
+                    <h2>清理人生空間 Tip5</h2>
+                    <p>勇敢的把不屬於你的放下</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
