@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巨量營養素</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            background: linear-gradient(-30deg ,#ceaff4, #8cbfdf);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .wrap {
+            width: 1200px;
+            display: flex;
+            margin: auto;
+        }
+        .item {
+            width: 370px;
+            margin: 15px;
+            text-align: center;
+            background: rgb(14, 14, 27);
+            transform: translateY(0px);
+            transition: .5s;
+        }
+        .item:hover {
+            transform: translateY(-50px);
+            box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+        }
+        .txt {
+            color: white;
+            padding: 20px;
+            position: relative;
+            height: 150px;
+        }
+        .txt:before {
+            content: '';
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border-top: 50px solid transparent;
+            border-left: 185px solid rgb(14, 14, 27);
+            border-right: 185px solid rgb(14, 14, 27); 
+            transform: translateY(-100%); /* why???? */
+        }
+        .item:hover .txt {
+            background: linear-gradient(0deg, rgb(39, 39, 65), rgb(26, 26, 75));
+        }
+        .item:hover .txt:before {
+            border-left: 185px solid rgb(26, 26, 75);
+            border-right: 185px solid rgb(26, 26, 75);            
+        }
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item h2 {
+            border-bottom: 1px solid #888;
+            padding-bottom: 0.4em;
+            margin-bottom: 0.3em;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/500/400?random=10" alt="">
+            <div class="txt">
+                <h2>蛋白質</h2>
+                <p>合成肌肉的主要原料，也是神經傳導需要的氨基酸來源。
+                    若是早上攝取蛋白質，可以幫助思考更清晰活躍。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/500/400?random=20" alt="">
+            <div class="txt">
+                <h2>脂肪</h2>
+                <p>儲存大量熱量，需要時能轉出。皮下脂肪能維持體溫，內臟脂肪則保護器官。
+                    是製造膽固醇、維生素Ｄ、膽汁酸及賀爾蒙的主要原料，也是傳送及吸收脂溶性維生素的媒介。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/500/400?random=30" alt="">
+            <div class="txt">
+                <h2>醣</h2>
+                <p>人體消耗能量的主要燃料，合成肝醣幫助身體運作，也是合成肌肉的燃料。
+                    攝取適量可以補充彈藥，避免肌肉被拿去燃燒，但是吃太多則會被儲存為脂肪。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
