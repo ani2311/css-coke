@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            padding: 100px 0;
+            background: linear-gradient(30deg, rgb(238, 195, 97), rgb(227, 111, 82)) 
+            fixed center center / 100% 100%;
+        }
+        .wrap {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            width: 1200px;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: large;
+        }
+        .item {
+            margin-bottom: 70px;
+            display: flex;
+            align-items: center;
+            /* background-color: blue; */
+        }
+        .item .pic {
+            width: 55%;
+            height: 400px;
+            flex-shrink: 0;
+        }
+        .item .pic img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item .txt {
+            width: 55%;
+            /* background: #fae; */
+            flex-shrink: 0;
+            padding: 50px;
+            color: #fff;
+            box-sizing: border-box;
+            /* todo:了解一下 */
+            z-index: 1;
+            /* opacity: .7; */
+
+        }
+        .item > :first-child {
+            margin-right: -10%;
+            /*後面的div會蓋到前面的*/
+        }
+        .item:nth-child(2) .txt {
+            background: rgba(204, 136, 243, .8);
+        }
+        #block-squat .pic{
+            background-image: url('img/squat.jpg');
+            background-size: cover;
+        }
+        .item:nth-child(3) .txt {
+            background: rgba(87, 152, 120, .8);
+        }
+        #block-deadlift .pic{
+            background-image: url('img/deadlift.jpg');
+            background-size: cover;
+        }
+        .item:nth-child(4) .txt {
+            background: rgba(132, 203, 233, .8);
+        }
+        #block-pull-down .pic{
+            background-image: url('img/pull-down.jpg');
+            background-size: cover;
+        }
+        .item:nth-child(5) .txt {
+            background: rgba(158, 148, 235, .8);
+        }
+        #block-shoulder-press .pic{
+            background-image: url('img/shoulder-press.jpg');
+            background-size: cover;
+        }
+        .item:nth-child(6) .txt {
+            background: rgba(35, 137, 81, 0.8);
+        }
+        #block-bench-press .pic{
+            background-image: url('img/bench-press.jpg');
+            background-size: cover;
+        }
+        .item:nth-child(7) .txt {
+            background: rgba(63, 124, 236, 0.8);
+        }
+        #block-row .pic{
+            background-image: url('img/row.png');
+            background-size: cover;
+        }
+        .txt h2 {
+            font-weight: 900;
+        }
+        .txt p {
+            font-weight: 300;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: #000;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">
+            <h1>重量訓練六大基礎動作</h1>
+        </div>
+        <div class="item" id="block-squat">
+            <div class="pic">
+            </div>
+            <div class="txt">
+                <h2>深蹲</h2>
+                <p>動作之王，又稱蹲舉。
+                </p>
+                <p>肌群：大腿、小腿、臀部、大腿後肌、核心。</p>
+            </div>
+        </div>
+        <div class="item" id="block-deadlift">
+            <div class="txt">
+                <h2>硬舉</h2>
+                <p>人類可以舉起最大重量的動作，正確的硬舉姿勢將能夠鍛鍊全身的肌群。</p>
+                <p>肌群：臀大肌、膕繩肌、股四頭肌、小腿肌群，下半身肌群幾乎都有參與。</p>
+            </div>
+            <div class="pic">
+            </div>
+        </div>
+        <div class="item" id="block-pull-down">
+            <div class="pic">
+            </div>
+            <div class="txt">
+                <h2>下拉</h2>
+                <p>滑輪下拉是完美的練背動作，幫助你的背闊肌更寬並建立 V 形背部。</p>
+                <p>肌群：背闊肌、前臂、二頭肌、三角肌、下背部和上背部、核心。</p>
+            </div>
+        </div>
+        <div class="item" id="block-bench-press">
+            <div class="txt">
+                <h2>臥推</h2>
+                <p>臥推的最主要目標當然是訓練出緊實的胸肌，使上半身肌肉更協調、改善骨骼健康。</p>
+                <p>肌群：胸大肌、前三角肌、肱三頭肌、核心。</p>
+            </div>
+            <div class="pic">
+            </div>
+        </div>
+        <div class="item" id="block-shoulder-press">
+            <div class="pic">
+            </div>
+            <div class="txt">
+                <h2>肩推</h2>
+                <p>訓練肩膀三角肌相當熱門的訓練動作，同時可以輔助臥推的力量提升。</p>
+                <p>肌群：三角肌、三頭肌、旋轉肌、斜方肌、核心。</p>
+            </div>
+        </div>
+        <div class="item" id="block-row">
+            <div class="txt">
+                <h2>划船</h2>
+                <p>訓練背肌的優良動作，有許多不同的訓練形式。</p>
+                <p>肌群：背闊肌、菱形肌、三角肌後束。</p>
+            </div>
+            <div class="pic">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>資料來源</p>
+        <a href="https://eagersport.online/%E7%A1%AC%E8%88%89deadlift%E5%9B%9B%E7%A8%AE%E5%B8%B8%E8%A6%8B%E9%8C%AF%E8%AA%A4%EF%BD%9C%E7%B7%B4%E5%A5%BD%E5%92%8C%E5%8F%97%E5%82%B7%E5%8F%AA%E6%9C%89%E4%B8%80%E7%B7%9A%E4%B9%8B%E9%9A%94/">硬舉Deadlift四種常見錯誤｜練好和受傷只有一線之隔</a>
+        <a href="https://www.myprotein.tw/blog/training/how-to-do-a-lat-pulldown-benefits-technique/">如何正確做滑輪下拉 Lat Pulldown | 技巧與好處</a>
+        <a href="https://www.joiiup.com/knowledge/content/1869">臥推練出緊實胸肌 記住這4原則達到增肌最大化</a>
+        <a href="https://www.taiwannutrition.com/blog/how-over-head-press-benefit/">肩推訓練－ 強化你的力量，正確姿勢以及優點介紹</a>
+    </div>
+</body>
+</html>
