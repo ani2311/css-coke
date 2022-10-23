@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fbe9fc0eb8.js" crossorigin="anonymous"></script>
+    <title>N006</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            height: 100vh;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            height: 50vh;
+        }
+        .main-content .container {
+            text-align: center;
+            height: 30px;
+            background: rgb(147, 147, 147);
+            margin: auto 0;
+        }
+        .main-content .continer h1{
+            font-size: 60px;
+        }
+        .main-footer {
+            padding: 150px 0 0 ;
+            background: linear-gradient(30deg, #863d55, #8a4369, #793b50)
+        }
+        .main-footer .container {
+            display: flex;
+            justify-content: center;
+            width: 1200px;
+            margin: auto;
+        }
+        .footer-item {
+            margin: 20px;
+            width: 0;
+            flex-grow: 1;
+        }
+        .footer-item nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-item nav a {
+            /* line-height: 1.4; */
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        .footer-item h4 {
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+            border-bottom: 1px solid white;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
+        }
+        .footer-item nav a i {
+            padding-right: 3px;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 150px;
+            padding: 10px 0;
+            background-color: #da99ac;
+            width: 100%;
+        }
+        .subscribe {
+            display: flex;
+            flex-direction: column;
+        }
+        .subscribe input[type=text]{
+            border: none;
+            padding: 5px 10px;
+            flex-grow: 1;
+            width: 0;
+        }
+        .subscribe input[type=submit]{
+            border: none;
+            padding: 5px 10px;
+            background-color: #200e18;
+            color: white;
+        }
+        .subscribe form{
+            display: flex;
+            margin: auto 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <h1>知識領域展開</h1>
+        </div>
+    </div>
+    <div class="main-footer">
+        <div class="container">
+            <div class="footer-item">
+                <h4>山林老菜鳥</h4>
+                <nav>
+                    <a href=""><i class="fa fa-angle-right"></i>初級百岳</a>
+                    <a href=""><i class="fa fa-angle-right"></i>台北、台中登山路線</a>
+                    <a href=""><i class="fa fa-angle-right"></i>登山知識</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>動物保育</h4>
+                <nav>
+                    <a href=""><i class="fa fa-angle-right"></i>流浪犬貓</a>
+                    <a href=""><i class="fa fa-angle-right"></i>野生動物</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>健身新手</h4>
+                <nav>
+                    <a href=""><i class="fa fa-angle-right"></i>飲食控制</a>
+                    <a href=""><i class="fa fa-angle-right"></i>動作原理</a>
+                </nav>
+            </div>
+            <div class="footer-item subscribe">
+                <h4>訂閱電子報</h4>
+                <form action="post">
+                    <input type="text" placeholder="請輸入Email">
+                    <input type="submit" value="訂閱">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2022
+            Ying
+        </div>
+    </div>
+</body>
+</html>
