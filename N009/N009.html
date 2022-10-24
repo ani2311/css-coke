@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fbe9fc0eb8.js" crossorigin="anonymous"></script>
+    <title>N009</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            height: 100vh;
+            background: linear-gradient(30deg, rgb(220, 133, 10), rgb(240, 200, 42), rgb(175, 233, 82), rgb(143, 228, 68));
+        }
+        .wrap {
+            padding: 10px 0;
+            background: rgb(42, 132, 135);
+            box-shadow: 5px 0px 15px rgba(108, 124, 204, 0.5);
+        }
+        .breadcrumb {
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+        .breadcrumb a:hover {
+            color: #ccc;
+        }
+        .breadcrumb li:last-child a{
+            font-weight: 900;
+            font-size: 1em;
+            color: #fff;
+        }
+        .breadcrumb li + li {
+            padding-left: 0px;
+        }
+        .breadcrumb li + li::before {
+            /* +? */
+            content: '>>';
+            color: #aaa;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #ddd;
+            padding: 0 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .photo img {
+            height: 500px;
+            margin: auto;
+        }
+        .transfer-btn button{
+            padding: 20px 40px;
+            font-weight: 900;
+            font-size: 2em;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(20deg, rgb(84, 71, 222), rgb(118, 108, 206), rgb(84, 71, 222));
+            box-shadow: 1px 0 5px rgba(0,0,0,.3);
+            color: #fff;
+        }
+        .transfer-btn button:hover {
+            cursor: pointer;
+            background: linear-gradient(20deg, rgb(118, 108, 206), rgb(84, 71, 222), rgb(118, 108, 206));
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="breadcrumb">
+            <li><a href="">The Earth</a></li>
+            <li><a href="">Land</a></li>
+            <li><a href="">Asia</a></li>
+            <li><a href="">East Asia</a></li>
+            <li><a href="">Island</a></li>
+            <li><a href="">Taiwan</a></li>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="img/taiwan.jpg" alt="">
+        </div>
+        <div class="transfer-btn">
+            <button>Send me to here!</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fbe9fc0eb8.js" crossorigin="anonymous"></script>
+    <title>N007</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main-header {
+            background: linear-gradient(0deg, rgb(92, 156, 168), rgb(43, 149, 108));
+        }
+        .main-header .container {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+        }
+        .main-header .main-nav {
+            margin: auto;
+        }
+        .main-header .main-nav a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 1em;
+            position: relative;
+            transform: translateY(0px);
+            display: inline-flex;
+            /* display: inline-block ? */
+            transition: .5s;
+        }
+        .main-header .main-nav a:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+        .main-header .main-nav a:after{
+            content: '';
+            height: 0px;
+            border-bottom: 1px solid #fff;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            transition: .5s;
+        }
+        .main-header .main-nav a:hover:after{
+            left: 0;
+            right: 0;
+        }
+        .main-header .logo {
+            height: 60px;
+            width: 40px;
+            background:rgb(167, 225, 203);
+            text-decoration: none;
+            color: rgb(14, 100, 61);
+            font-size: 2.5em;
+            font-weight: 700;
+            padding: 0 3px;
+            line-height: 1.5;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .header-search {
+            display: flex;
+
+        }
+        .main-header .header-search input[type=search] {
+            padding: 5px 10px;
+            border: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .main-header .header-search button {
+            border: none;
+            padding: 5px 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: #fff;
+        }
+        .main-header .header-search input[type=search]:focus,
+        .main-header .header-search button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <div class="container">
+            <a href="" class="logo">
+                B
+                <!-- <img src="" alt="" class="brand"> -->
+            </a>
+            <nav class="main-nav">
+                <a href="https://www.books.com.tw/products/0010643797" target="_blank">設計心理學</a>
+                <a href="https://www.books.com.tw/products/0010808775" target="_blank">這才是心理學</a>
+                <a href="">藝術治療</a>
+                <a href="">體驗服務</a>
+            </nav>
+            <form action="" class="header-search">
+                <input type="search" name="" id="">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
