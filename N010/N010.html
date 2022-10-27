@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fbe9fc0eb8.js" crossorigin="anonymous"></script>
+    <title>山岳紀錄</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            height: 100vh;
+            background: #000;
+        }
+        .wrap {
+            width: 100%;
+            margin: auto;
+        }
+        .item {
+            float: left;
+            position: relative;
+            
+        }
+        .item:hover .txt{
+            opacity: 1;
+        }
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item:first-child {
+            width: 50%;
+        }        
+        .item:first-child ~ .item {
+            width: 25%;
+        }
+        .item .txt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0,0,0,.6);
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            opacity: 0;
+            transition: .5s;
+        }
+        .item h3 {
+            margin-bottom: .4em;
+        }
+        .item p {
+            font-weight: 100;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <img src="img/合歡北.JPG" alt="">
+                <div class="txt">
+                    <h3>合歡北峰</h3>
+                    <p>合歡北峰（又稱北合歡山）位於太魯閣國家公園西界，海拔3422公尺，為合歡山群最高峰，十崇之一。
+                       
+                    </p>
+                    <p>建議單日行程，也順便把周圍的合歡東峰、石門山一起撿起，可以夜宿清境或松雪樓。 </p>
+                    <p>
+                        單程2公里，高度落差447公尺。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/奇萊南華.png" alt="">
+                <div class="txt">
+                    <h3>奇萊南華</h3>
+                    <p>山界稱呼的「奇萊南華」，是指奇萊南峰與南華山。
+                        著名特色是平緩但是可能會走到崩潰的能高越嶺古道及早晨時分，山頂的黃金大草原。
+                        
+                    </p>
+                    <p>建議兩天一夜行程，夜宿超級高級的天池山莊。</p>
+                    <p>
+                        單程17.5公里，高度落差1308公尺。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/雪山.jpg" alt="">
+                <div class="txt">
+                    <h3>雪主東</h3>
+                    <p>五岳之一的雪山，是台灣的第二高峰，著名的特色是主峰上的雪山圈谷與路程上的黑森林。
+                       
+                    </p>
+                    <p>建議兩天一夜行程，夜宿369山莊。 </p>
+                    <p>
+                        單程10.9公里，高度落差1746公尺。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/嘉明湖.png" alt="">
+                <div class="txt">
+                    <h3>嘉明湖</h3>
+                    <p>
+                        五嶽之一的北大武山，是台灣南端唯一超過 3000 公尺以上的山峰，是魯凱族和排灣族的聖山。
+                        擁有秋冬季壯闊的雲海景觀。
+                    </p>
+                    <p>建議三天兩夜行程，夜宿檜谷山莊。</p>
+                    <p>
+                        單程13公里，高度落差1276公尺。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/玉山.JPG" alt="">
+                <div class="txt">
+                    <h3>玉山西主北</h3>
+                    <p>
+                        玉山，不只是台灣最高峰，還是東北亞最高峰。
+                        那次我們週週抽排隊遞補，才補上這個抽中要看人品的熱門路線。
+                    </p>
+                    <p>建議兩天一夜行程，夜宿排雲山莊。</p>
+                    <p>
+                        到主峰單程10.9公里，高度落差1342公尺。
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/北大武.png" alt="">
+                <div class="txt">
+                    <h3>北大武</h3>
+                    <p>
+                        五嶽之一的北大武山，是台灣南端唯一超過 3000 公尺以上的山峰，是魯凱族和排灣族的聖山。
+                        擁有秋冬季壯闊的雲海景觀。
+                    </p>
+                    <p>建議三天兩夜行程，夜宿檜谷山莊。</p>
+                    <p>
+                        單程9公里，高度落差1542公尺。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
