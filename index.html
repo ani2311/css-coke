@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Coke </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .container {
+            margin: auto;
+            width: 80%;
+            padding: 20px;
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            background: rgb(235, 181, 134);
+        }
+        .preview {
+            padding: 20px;
+        }
+        .preview img{
+            max-height: 400px;
+            width: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a target="_blank" href="N001/N001.html" data-toggle="N001">圖文滿版區塊</a></li>
+            <li><a target="_blank" href="N002/N002.html" data-toggle="N002">互動圖卡</a></li>
+            <li><a target="_blank" href="N003/N003.html" data-toggle="N003">會飄的圖卡</a></li>
+            <li><a target="_blank" href="N004/N004.html" data-toggle="N004">交錯漂浮版</a></li>
+            <li><a target="_blank" href="N006/N006.html" data-toggle="N006">網頁頁尾版塊</a></li>
+            <li><a target="_blank" href="N007/N007.html" data-toggle="N007">上方選單</a></li>
+            <li><a target="_blank" href="N008/N008.html" data-toggle="N008">logo移到選單中間(暴力法)</a></li>
+            <li><a target="_blank" href="N009/N009.html" data-toggle="N009">麵包屑</a></li>
+            <li><a target="_blank" href="N010/N010.html" data-toggle="N010">方塊酥</a></li>
+        </ul>
+        <div class="preview">
+            <img src="" alt="">
+        </div>
+    </div>
+
+</body>
+<script>
+    const links = document.querySelectorAll('a');
+    const previewer = document.querySelector('.preview img');
+    for(ele of links) {
+        ele.addEventListener('mouseenter', function(e){
+            let toggle = e.target.dataset.toggle;
+            previewer.setAttribute('src', toggle + '/screenshot.png');
+        })
+    }
+</script>
+</html>
