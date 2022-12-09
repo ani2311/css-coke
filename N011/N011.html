@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fbe9fc0eb8.js" crossorigin="anonymous"></script>
+    <title>臺灣交通系統問題</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            background-color: darkslategray;
+        }
+        .container {
+            display: flex;
+            margin: auto;
+            width: 1200px;
+            flex: 1;
+            justify-content: center;
+            padding-top: 75px; /*把父層空間補上*/
+        }
+        .item {
+            width: 380px;
+            margin: 0 10px;
+            padding: 10px;
+            background-color: white;
+            border: 10px solid rgb(187, 78, 38);
+            border-radius: 20px;
+            box-shadow: 10px 20px 50px rgba(0,0,0,.5);
+        }
+        .item h2 {
+            text-align: center;
+            font-weight: bold;
+            color: coral;
+        }
+        .item p {
+            color: black;
+            padding: 10px;
+            text-align: left;
+        }
+        .item .icon:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            border-radius: 50%;
+            border-top: 10px solid rgb(187, 78, 38);
+            border-right: 10px solid rgb(187, 78, 38);
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            transform: rotate(-45deg);
+
+        } 
+        .item .icon {
+            text-align: center;
+            background: rgb(255, 255, 255);
+            width: 150px;
+            height: 150px;
+            margin: -85px auto 0;
+            font-size: 65px;
+            line-height: 150px; /*垂直置中寫法*/
+            border-radius: 50%;
+            position: relative;
+            color: rgb(187, 78, 38);
+        }
+        .item:hover .icon>i {
+            animation: shake-shake .2s linear infinite alternate;
+        }
+        @keyframes shake-shake{
+            0% { transform: rotate(-10deg)}
+            100% { transform: rotate(10deg)}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="icon">
+                <i class="fa-solid fa-road"></i>
+            </div>
+            <div class="text">
+                <h2>道路設計</h2>
+                <p>台灣地狹人稠，居住空間狹小，車輛多。</br>
+                道路設計優先給車輛行駛，以疏通為目的，且以方便的方式執行。</br>
+                通常未考慮左轉車流、路邊停車空間及不便人士使用的路面空間，
+                   對於機車族的設計也是不友善。
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fa fa-id-card"></i>
+            </div>
+            <div class="text">
+                <h2>考照制度</h2>
+                <p>駕照取得率很高，考照極簡單。</br>
+                    汽車駕照取得雖透過駕訓班，但幾乎是保證取得，機車駕照取得更是容易。</br>
+                    且術科接未包含足夠能應付現實複雜路況的項目，
+                    也未加強考生關於用路人道德認知、法律知識及車輛檢修的部分。</br>
+                    駕照也無需定期測驗以確保駕駛人現況為合格駕駛人。
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fa fa-gavel"></i>
+            </div>
+            <div class="text">
+                <h2>執法與觀念</h2>
+                <p>交通問題是一個系統性、社會性的複雜問題，多數用路人在繁忙的生活下，要求最便利的方式達成目的。</br>
+                    台灣交通的執法除了酒駕及重大事故外，基本上對於佔用、不禮讓、違停等都採軟性的執法方式，
+                    或根本不舉發、處罰，主打便民，以免招來民怨。</br>
+                    多數人因為從小生活在現在的環境下，也許連警察都不會認為有什麼問題。</br>
+                    且很多設計問題、安全問題都並不是很棘手，造成的傷亡案例被分散至365天，
+                    每個因為爛交通造成的心情不愉快也只是每個人生活中的極小部分。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
